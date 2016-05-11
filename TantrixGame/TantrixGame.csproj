@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4064EAB1-CE2A-497E-B32F-DA052502318B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TantrixGame</RootNamespace>
+    <AssemblyName>TantrixGame</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameScreen.Designer.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HowtoPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowtoPlay.Designer.cs">
+      <DependentUpon>HowtoPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels.Designer.cs">
+      <DependentUpon>Levels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowtoPlay.resx">
+      <DependentUpon>HowtoPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels.resx">
+      <DependentUpon>Levels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\howplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menusettings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkfalse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checktrue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levels.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl1a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl1b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl1c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubgnew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenunew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl2b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl2c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl3a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl3c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl3e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl4f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl5g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl7i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl8j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lwl6a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

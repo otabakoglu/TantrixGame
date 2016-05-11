@@ -1,0 +1,13 @@
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\bin\Debug\TantrixGame.exe.config
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\bin\Debug\TantrixGame.exe
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.csprojResolveAssemblyReference.cache
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.GameScreen.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.HowtoPlay.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.Levels.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.MainMenu.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.Splash.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.Properties.Resources.resources
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.csproj.GenerateResource.Cache
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.exe
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\obj\Debug\TantrixGame.pdb
+C:\Users\Nemo\documents\visual studio 2015\Projects\TantrixGame\TantrixGame\bin\Debug\TantrixGame.pdb
